@@ -27,5 +27,6 @@ public class CotacaoStep extends CotacaoPage {
     public void envio_a_cotacao_verificando_a_mensagem(String string) {
         assertEquals(string, getSuccessMessageElement().getText());
         fechar();
+        //alterado do git
     }
 }
