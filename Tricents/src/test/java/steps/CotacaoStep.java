@@ -28,5 +28,6 @@ public class CotacaoStep extends CotacaoPage {
         assertEquals(string, getSuccessMessageElement().getText());
         fechar();
         //alterado do git
+        //alterado do eclipse
     }
 }
