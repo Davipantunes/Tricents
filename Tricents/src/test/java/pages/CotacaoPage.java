@@ -12,7 +12,8 @@ import static org.junit.Assert.assertEquals;
 public class CotacaoPage extends ConfigBrowser {
 
     public WebElement getAbaCotacao() {
-        return browser.findElement(By.cssSelector(".idealsteps-step-active a"));
+        //return browser.findElement(By.cssSelector(".idealsteps-step-active a"));
+    	return browser.findElement(By.id("sendquote"));
     }
     public WebElement getEmailElement() {
         List<WebElement> email = browser.findElements(By.id("email"));

@@ -15,9 +15,9 @@ public class SelecaoPage extends ConfigBrowser {
         return browser.findElement(By.cssSelector(".idealsteps-step-active a"));
     }
     public WebElement getOptionElement() {
-        List<WebElement> selectSilver = browser.findElements(By.id("selectsilver"));
-        assertEquals(1, selectSilver.size());
-        return selectSilver.get(0);
+        List<WebElement> selectGold = browser.findElements(By.id("selectgold"));
+        assertEquals(1, selectGold.size());
+        return selectGold.get(0);
     }
 
     public WebElement getNextElement() {

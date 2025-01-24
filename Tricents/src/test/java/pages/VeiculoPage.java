@@ -5,13 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-
 import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
 public class VeiculoPage extends ConfigBrowser {
+	
     public Select getMakeSelect() {
         List<WebElement> make = browser.findElements(By.id("make"));
         assertEquals(1, make.size());
@@ -103,6 +102,7 @@ public class VeiculoPage extends ConfigBrowser {
         return next.get(0);
     }
     public WebElement getAba() {
-        return browser.findElement(By.cssSelector(".idealsteps-step-active a"));
+    	return browser.findElement(By.cssSelector(".idealsteps-step-active a"));
     }
+
 }

@@ -1,13 +1,9 @@
 package steps;
 
-import Utils.ConfigBrowser;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import pages.SeguroPage;
-
-
-
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SeguroStep extends SeguroPage {
@@ -28,7 +24,6 @@ public class SeguroStep extends SeguroPage {
         getOccupationSelect().selectByIndex(1);
         acoes.moveToElement(getHobbiesElement()).click().perform();
         getWebsiteElement().sendKeys("http://www.capital.sp.gov.br");
-
     }
     @Entao("vou para a pagina do produto")
     public void vou_para_a_pagina_do_produto() {

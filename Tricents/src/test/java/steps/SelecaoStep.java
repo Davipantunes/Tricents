@@ -4,8 +4,8 @@ import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import pages.SelecaoPage;
-
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import java.time.Duration;
 
 public class SelecaoStep extends SelecaoPage {
 
@@ -19,7 +19,7 @@ public class SelecaoStep extends SelecaoPage {
     }
     @Entao("vou para a pagina de envio de cotacao")
     public void vou_para_a_pagina_de_envio_de_cotacao() {
-        acoes.moveToElement(getNextElement()).click().perform();
+    	getNextElement().click();
     }
 
 }
