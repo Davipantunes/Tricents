@@ -32,7 +32,7 @@ jobs:
           cache: 'maven'
 
       - name: Install Dependencies and Run Tests
-        run: mvn clean test
+        run: cd Tricents && mvn clean test
 
       - name: Upload Test Reports
         if: always()
